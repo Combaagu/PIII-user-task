@@ -19,7 +19,11 @@ const app = express()
 const port = process.env.PORT
 
 // Enable CORS
-app.use(cors());
+// modificacion de cors
+app.use(cors({
+  origin: 'https://piii-user-task.vercel.app', // Cambia esto por el dominio de tu frontend
+  credentials: true // Si necesitas enviar cookies o encabezados de autorización
+}));
 
 // Enable the use of request body parsing middleware
 app.use(bodyParser.json());
