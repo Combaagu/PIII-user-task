@@ -21,7 +21,7 @@ const port = process.env.PORT
 // Enable CORS
 // modificacion de cors
 app.use(cors({
-  origin: 'https://piii-user-task.vercel.app', // Cambia esto por el dominio de tu frontend
+  origin: 'https://tp-4-auht0-task.vercel.app', // Cambia esto por el dominio de tu frontend
   credentials: true // Si necesitas enviar cookies o encabezados de autorización
 }));
 
